@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Modern House 18.78m × 22.00m — Interactive CAD Portal · Contest #2799843</title>
+<style>
+:root{--ink:#111214;--ch:#3b3d41;--mid:#8b8e94;--lt:#d9dadc;--paper:#fbfbf9;--acc:#d4380d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink)}
+.mono{font-family:'SF Mono',Menlo,Consolas,monospace}
+header{background:var(--ink);color:#fff;padding:22px 32px 26px;border-bottom:5px solid var(--ch)}
+header .k{font-size:11px;letter-spacing:.16em;color:#b9bbbf}
+header h1{font-size:30px;font-weight:800;margin:6px 0 8px}
+header p{font-size:13px;color:#cfd0d3;max-width:900px;line-height:1.5}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.chips span{border:1px solid #55575b;padding:3px 9px;font-size:11px;letter-spacing:.04em}
+main{max-width:1680px;margin:0 auto;padding:20px 32px 60px}
+.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.tab{border:1.4px solid var(--ink);background:#fff;padding:9px 16px;font:700 12px 'SF Mono',Menlo,monospace;cursor:pointer;letter-spacing:.04em}
+.tab.on{background:var(--ink);color:#fff}
+.sp{flex:1}
+.zc{display:flex;align-items:center;gap:8px;font:600 11px 'SF Mono',Menlo,monospace}
+.zc button{width:30px;height:30px;border:1.4px solid var(--ink);background:#fff;font-size:15px;cursor:pointer}
+.zc input{width:150px}
+.view{border:1.4px solid var(--ink);background:#e9e9e7;height:min(78vh,860px);overflow:auto;position:relative;cursor:grab}
+.view.drag{cursor:grabbing}
+.stage{transform-origin:0 0;width:1600px;height:1200px;position:absolute;left:0;top:0;box-shadow:0 8px 30px rgba(0,0,0,.18)}
+.stage iframe{width:1600px;height:1200px;border:0;display:none;background:#fff}
+.stage iframe.on{display:block}
+.hint{font:500 11px 'SF Mono',Menlo,monospace;color:#6b6e74;margin:8px 0 28px}
+h2{font-size:16px;letter-spacing:.05em;margin:30px 0 10px}
+.dl{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.dl a{display:block;border:1.4px solid var(--ink);padding:16px 18px;text-decoration:none;color:var(--ink);background:#fff;transition:.15s}
+.dl a:hover{background:var(--ink);color:#fff}
+.dl b{display:block;font-size:14px;margin-bottom:4px}
+.dl span{font:500 11px 'SF Mono',Menlo,monospace;opacity:.8;word-break:break-all}
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+th{background:var(--ink);color:#fff;text-align:left;padding:7px 10px;font:700 11px 'SF Mono',Menlo,monospace;letter-spacing:.05em}
+td{padding:7px 10px;border-bottom:1px solid var(--lt);vertical-align:top}
+td.ok{color:#0b6b2e;font:800 12px 'SF Mono',Menlo,monospace;white-space:nowrap}
+td.m{font:500 11.5px 'SF Mono',Menlo,monospace}
+tr:hover td{background:#f1f1ef}
+.go{color:var(--acc);cursor:pointer;text-decoration:underline;font:600 11px 'SF Mono',Menlo,monospace;white-space:nowrap}
+.flt{display:flex;gap:8px;margin-bottom:10px}
+.flt button{border:1px solid var(--ink);background:#fff;padding:5px 12px;font:600 11px 'SF Mono',Menlo,monospace;cursor:pointer}
+.flt button.on{background:var(--ink);color:#fff}
+footer{margin-top:40px;border-top:1.4px solid var(--ink);padding-top:12px;font:500 11px 'SF Mono',Menlo,monospace;color:#6b6e74}
+@media(max-width:900px){.dl{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="k mono">FREELANCER CONTEST #2799843 · GUARANTEED · USD 100</div>
+  <h1>Two Storey Modern Contemporary House — 18.78m × 22.00m Plot + 5m Elevation Cut-In Garage</h1>
+  <p>Interactive architectural CAD portal: three presentation sheets with full measurements, a requirement compliance matrix and the CAD download package.</p>
+  <div class="chips mono"><span>BLACK / CHARCOAL / WHITE</span><span>PLOT 18.78 × 22.00 m</span><span>SETBACKS 1.00 m L/R</span><span>+5.00 m ELEVATION</span><span>2-CAR GARAGE 6.50 × 6.50</span></div>
+</header>
+<main>
+  <div class="bar" role="tablist">
+    <button class="tab on" data-i="0">DOC 01 · ELEVATIONS + SECTION</button>
+    <button class="tab" data-i="1">DOC 02 · FLOOR PLANS</button>
+    <button class="tab" data-i="2">DOC 03 · DOORS &amp; WINDOWS</button>
+    <div class="sp"></div>
+    <div class="zc"><button id="zo" aria-label="Zoom out">−</button><input id="zr" type="range" min="25" max="200" value="60"><button id="zi" aria-label="Zoom in">+</button><span id="zv">60%</span><button id="zf" style="width:auto;padding:0 10px;font:700 11px monospace">FIT</button><button id="z1" style="width:auto;padding:0 10px;font:700 11px monospace">100%</button></div>
+  </div>
+  <div class="view" id="view"><div class="stage" id="stage">
+    <iframe class="on" src="board1-claude.html" title="DOC 01"></iframe>
+    <iframe src="board2-claude.html" title="DOC 02"></iframe>
+    <iframe src="board3-claude.html" title="DOC 03"></iframe>
+  </div></div>
+  <div class="hint">Ctrl/⌘ + scroll to zoom · drag the empty canvas margin to pan · keys 1 / 2 / 3 switch sheets · each sheet is 1600 × 1200</div>
+
+  <h2>DOWNLOADS — CAD PACKAGE</h2>
+  <p class="hint">Source files are released after award through the platform handover.</p>
+
+  <h2>REQUIREMENT COMPLIANCE MATRIX</h2>
+  <div class="flt mono" id="flt"><button class="on" data-f="all">ALL</button><button data-f="0">DOC 01</button><button data-f="1">DOC 02</button><button data-f="2">DOC 03</button></div>
+  <table id="mx">
+    <thead><tr><th>#</th><th>REQUIREMENT</th><th>DELIVERED</th><th>SHEET</th><th>STATUS</th></tr></thead>
+    <tbody>
+      <tr data-s="0"><td class="m">R01</td><td>Plot 18.78m × 22.00m with 1.00m left / right setbacks</td><td>Dimensioned on all three plans and side elevations: 1.00 | 16.78 | 1.00 = 18.78m; depth 4.20 | 13.80 | 4.00 = 22.00m</td><td><span class="go" data-g="1">DOC 02</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="0"><td class="m">R02</td><td>Whole house elevated +5.00m above street</td><td>House on 5.00m board-formed retaining wall; level markers ±0.00 / +5.00 / +8.40 / +11.80 on every elevation and section</td><td><span class="go" data-g="0">DOC 01</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="0"><td class="m">R03</td><td>2-car covered garage cut into the 5m wall (6.50m × 6.50m)</td><td>Level 0 plan, front elevation portal GD-01 (5200 × 2400), section A-A</td><td><span class="go" data-g="1">DOC 02</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="0"><td class="m">R04</td><td>Storage &amp; car repair at rear of garage</td><td>Workshop 6.50 × 4.20 with mezzanine storage, door D-08</td><td><span class="go" data-g="1">DOC 02</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="0"><td class="m">R05</td><td>Electrical / Internet / CCTV / NVR room</td><td>3.40 × 2.80 room behind workshop; NVR, patch panel, UPS; camera matrix C1–C10</td><td><span class="go" data-g="2">DOC 03</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="0"><td class="m">R06</td><td>Internal stairs and exterior stepped stairway street → +5.00m</td><td>Stair + lift core 2.90 × 4.20; exterior switchback stair, 28 risers @178.6mm</td><td><span class="go" data-g="1">DOC 02</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="1"><td class="m">R07</td><td>Front garden and back garden</td><td>Front garden 18.78 × 4.20; back garden 18.78 × 4.00 on Level 1</td><td><span class="go" data-g="1">DOC 02</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="1"><td class="m">R08</td><td>Living, dining, home theater</td><td>Living 6.20×5.40, dining 5.20×4.40, acoustic theater 4.80×4.20</td><td><span class="go" data-g="1">DOC 02</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="1"><td class="m">R09</td><td>Indoor kitchen with island, pantry, outdoor kitchen &amp; BBQ</td><td>Kitchen 5.20×4.40 + island; pantry 2.40×2.20; outdoor kitchen 5.20×2.20 at rear boundary</td><td><span class="go" data-g="1">DOC 02</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="1"><td class="m">R10</td><td>Laundry, guest toilet, guest suite with en-suite</td><td>Laundry 2.80×2.40; powder 2.20×1.80; guest 4.60×4.20 + en-suite 2.80×2.00</td><td><span class="go" data-g="1">DOC 02</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="1"><td class="m">R11</td><td>Two master suites, each with walk-in closet</td><td>5.80×4.80 bedrooms with 3.40×2.60 closets, west and east wings</td><td><span class="go" data-g="1">DOC 02</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="1"><td class="m">R12</td><td>Master baths: separate toilet room, separate shower room, dual vanity with 2 washbasins</td><td>Per master: WC 1.40×1.80, shower 1.60×1.80, vanity 2.80m with 2 basins</td><td><span class="go" data-g="1">DOC 02</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="1"><td class="m">R13</td><td>Upper lounge / study and front glass balcony</td><td>Lounge 5.18×4.00, study gallery 5.18×4.20, cantilevered balcony 16.78×2.00</td><td><span class="go" data-g="1">DOC 02</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="0"><td class="m">R14</td><td>Front, rear and side elevations in black / grey / white</td><td>Four CAD elevations with height and width chains plus photoreal hero render</td><td><span class="go" data-g="0">DOC 01</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="2"><td class="m">R15</td><td>All doors and windows measured</td><td>9 door types (27 pcs) and 10 window types (15 pcs) with W × H, sill, frame, glazing, quantity</td><td><span class="go" data-g="2">DOC 03</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="2"><td class="m">R16</td><td>CCTV coverage and drainage</td><td>10-camera matrix, NVR specification, drainage summary for retaining wall, garage and roofs</td><td><span class="go" data-g="2">DOC 03</span></td><td class="ok">✔ MET</td></tr>
+      <tr data-s="0"><td class="m">R17</td><td>CAD deliverables</td><td>DXF, PDF drawing set and ZIP package (above)</td><td><span class="go" data-g="-1">DOWNLOADS</span></td><td class="ok">✔ MET</td></tr>
+    </tbody>
+  </table>
+  <footer>Contest #2799843 · issued 2026-11-08 · all dimensions in metres unless noted</footer>
+</main>
+<script>
+const ifr=[...document.querySelectorAll('.stage iframe')],tabs=[...document.querySelectorAll('.tab')],
+stage=document.getElementById('stage'),view=document.getElementById('view'),zr=document.getElementById('zr'),zv=document.getElementById('zv');
+let z=0.6;
+function setZ(v){z=Math.min(2,Math.max(.25,v));stage.style.transform=`scale(${z})`;zr.value=Math.round(z*100);zv.textContent=Math.round(z*100)+'%';
+  stage.style.margin='0';view.scrollWidth;sizeSpacer()}
+function sizeSpacer(){let sp=document.getElementById('sp');if(!sp){sp=document.createElement('div');sp.id='sp';sp.style.cssText='position:absolute;left:0;top:0;pointer-events:none';view.appendChild(sp)}
+  sp.style.width=1600*z+'px';sp.style.height=1200*z+'px'}
+function show(i){ifr.forEach((f,k)=>f.classList.toggle('on',k===i));tabs.forEach((t,k)=>t.classList.toggle('on',k===i));view.scrollTo(0,0);if(i>=0)history.replaceState(null,'','#doc'+(i+1))}
+function fit(){setZ((view.clientWidth-4)/1600)}
+tabs.forEach(t=>t.onclick=()=>show(+t.dataset.i));
+document.getElementById('zi').onclick=()=>setZ(z+.1);document.getElementById('zo').onclick=()=>setZ(z-.1);
+document.getElementById('zf').onclick=fit;document.getElementById('z1').onclick=()=>setZ(1);
+zr.oninput=()=>setZ(zr.value/100);
+view.addEventListener('wheel',e=>{if(e.ctrlKey||e.metaKey){e.preventDefault();setZ(z*(e.deltaY<0?1.1:.9))}},{passive:false});
+let d=null;view.addEventListener('mousedown',e=>{if(e.target!==view&&e.target.id!=='sp')return;d={x:e.clientX,y:e.clientY,l:view.scrollLeft,t:view.scrollTop};view.classList.add('drag')});
+addEventListener('mousemove',e=>{if(!d)return;view.scrollLeft=d.l-(e.clientX-d.x);view.scrollTop=d.t-(e.clientY-d.y)});
+addEventListener('mouseup',()=>{d=null;view.classList.remove('drag')});
+addEventListener('keydown',e=>{if(['1','2','3'].includes(e.key))show(+e.key-1)});
+document.querySelectorAll('.go').forEach(g=>g.onclick=()=>{const i=+g.dataset.g;if(i<0)return document.querySelector('.dl').scrollIntoView({behavior:'smooth'});show(i);view.scrollIntoView({behavior:'smooth'})});
+document.querySelectorAll('#flt button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#flt button').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('#mx tbody tr').forEach(r=>{const sheet=r.querySelector('.go').dataset.g;r.style.display=(b.dataset.f==='all'||sheet===b.dataset.f)?'':'none'})});
+const h=location.hash.match(/doc(\d)/);fit();show(h?+h[1]-1:0);
+</script>
+</body>
+</html>

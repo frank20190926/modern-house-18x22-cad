@@ -1,0 +1,533 @@
+{
+  "types": {
+    "GD1": [
+      5000,
+      2600,
+      0,
+      "Sectional insulated steel",
+      "Garage"
+    ],
+    "D1": [
+      1400,
+      2400,
+      0,
+      "Pivot / solid insulated leaf",
+      "Main entrance"
+    ],
+    "D2": [
+      1000,
+      2400,
+      0,
+      "Solid-core acoustic hinged",
+      "Bedrooms / entertainment"
+    ],
+    "D3": [
+      800,
+      2200,
+      0,
+      "Moisture-resistant hinged",
+      "WC / guest bath"
+    ],
+    "D4": [
+      800,
+      2200,
+      0,
+      "10 mm toughened safety glass",
+      "Separate shower"
+    ],
+    "D5": [
+      900,
+      2200,
+      0,
+      "Solid-core hinged",
+      "Pantry / storage"
+    ],
+    "D6": [
+      900,
+      2200,
+      0,
+      "Self-closing service door*",
+      "Service / stair / kitchen exit"
+    ],
+    "D7": [
+      3000,
+      2400,
+      0,
+      "3-panel aluminium slider / G1",
+      "Garden / terrace"
+    ],
+    "D8": [
+      1000,
+      2400,
+      0,
+      "Insulated security hinged",
+      "Street pedestrian entrance"
+    ],
+    "W1": [
+      3600,
+      2400,
+      300,
+      "Fixed + casement / G1",
+      "Living front"
+    ],
+    "W2": [
+      2400,
+      1800,
+      600,
+      "Casement + fixed / G1",
+      "Guest bedroom"
+    ],
+    "W3": [
+      2400,
+      1500,
+      900,
+      "Casement + fixed / G1",
+      "Dining"
+    ],
+    "W4": [
+      2400,
+      1200,
+      1200,
+      "Awning + fixed / G1",
+      "Indoor kitchen"
+    ],
+    "W5": [
+      3000,
+      1800,
+      600,
+      "Fixed + casement / G1",
+      "Entertainment"
+    ],
+    "W6": [
+      3000,
+      2100,
+      300,
+      "Fixed + casement / G1",
+      "Master sleeping areas"
+    ],
+    "W7": [
+      1200,
+      1200,
+      1200,
+      "Awning / G2 privacy",
+      "Walk-in closets"
+    ],
+    "W8": [
+      600,
+      900,
+      1500,
+      "Awning / G2 privacy",
+      "Separate WC / guest bath"
+    ],
+    "W9": [
+      900,
+      900,
+      1500,
+      "Awning / G2 privacy",
+      "Separate shower"
+    ],
+    "W10": [
+      1200,
+      1200,
+      1200,
+      "Awning / G1",
+      "Street lobby / pantry"
+    ]
+  },
+  "openings": [
+    {
+      "level": 0,
+      "wall": "F",
+      "code": "GD1",
+      "start": 1400,
+      "room": "Two-car garage",
+      "flip": 1
+    },
+    {
+      "level": 0,
+      "wall": "F",
+      "code": "D8",
+      "start": 10000,
+      "room": "Street lobby",
+      "flip": 1
+    },
+    {
+      "level": 0,
+      "wall": "F",
+      "code": "W10",
+      "start": 7300,
+      "room": "Street lobby",
+      "flip": 1
+    },
+    {
+      "level": 0,
+      "wall": "G",
+      "code": "D6",
+      "start": 2300,
+      "room": "Garage to protected lobby",
+      "flip": -1
+    },
+    {
+      "level": 0,
+      "wall": "S",
+      "code": "D5",
+      "start": 2000,
+      "room": "Rear storage / car repair",
+      "flip": 1
+    },
+    {
+      "level": 0,
+      "wall": "S",
+      "code": "D6",
+      "start": 5000,
+      "room": "Electrical / IT / CCTV / NVR",
+      "flip": 1
+    },
+    {
+      "level": 0,
+      "wall": "ST",
+      "code": "D6",
+      "start": 7200,
+      "room": "Protected stair enclosure",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "F",
+      "code": "D1",
+      "start": 9800,
+      "room": "Main entrance",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "F",
+      "code": "W1",
+      "start": 2100,
+      "room": "Living",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "F",
+      "code": "W2",
+      "start": 12300,
+      "room": "Guest suite",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "H1R",
+      "code": "D2",
+      "start": 11900,
+      "room": "Guest suite",
+      "flip": -1
+    },
+    {
+      "level": 1,
+      "wall": "H2R",
+      "code": "D2",
+      "start": 12000,
+      "room": "Entertainment",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "CORE",
+      "code": "D6",
+      "start": 4800,
+      "room": "Stair to main-floor hall",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "B",
+      "code": "D6",
+      "start": 5400,
+      "room": "Kitchen to rear garden",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "H2C",
+      "code": "D3",
+      "start": 7300,
+      "room": "Guest toilet",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "H2C",
+      "code": "D6",
+      "start": 9600,
+      "room": "Laundry",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "A",
+      "code": "D5",
+      "start": 15900,
+      "room": "Pantry from kitchen",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "BATHV",
+      "code": "D3",
+      "start": 8500,
+      "room": "Guest ensuite",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "B",
+      "code": "D7",
+      "start": 12600,
+      "room": "Entertainment to back garden",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "B",
+      "code": "W4",
+      "start": 2300,
+      "room": "Indoor kitchen",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "B",
+      "code": "W10",
+      "start": 8500,
+      "room": "Pantry",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "L",
+      "code": "W3",
+      "start": 11900,
+      "room": "Dining",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "R",
+      "code": "W5",
+      "start": 13200,
+      "room": "Entertainment",
+      "flip": 1
+    },
+    {
+      "level": 1,
+      "wall": "R",
+      "code": "W8",
+      "start": 8500,
+      "room": "Guest ensuite",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "ACH",
+      "code": "D5",
+      "start": 1800,
+      "room": "Master A walk-in closet",
+      "flip": -1
+    },
+    {
+      "level": 2,
+      "wall": "AWET",
+      "code": "D3",
+      "start": 4200,
+      "room": "Master A separate WC",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "AWET",
+      "code": "D4",
+      "start": 5600,
+      "room": "Master A separate shower",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "BCH",
+      "code": "D5",
+      "start": 15600,
+      "room": "Master B walk-in closet",
+      "flip": -1
+    },
+    {
+      "level": 2,
+      "wall": "BWET",
+      "code": "D3",
+      "start": 11700,
+      "room": "Master B separate WC",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "BWET",
+      "code": "D4",
+      "start": 13300,
+      "room": "Master B separate shower",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "A",
+      "code": "D2",
+      "start": 10200,
+      "room": "Master A suite",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "BAY",
+      "code": "D2",
+      "start": 10200,
+      "room": "Master B suite",
+      "flip": -1
+    },
+    {
+      "level": 2,
+      "wall": "TERR",
+      "code": "D7",
+      "start": 7500,
+      "room": "Shared roof terrace",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "CORE",
+      "code": "D6",
+      "start": 4800,
+      "room": "Stair to upper-floor hall",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "F",
+      "code": "W6",
+      "start": 2200,
+      "room": "Master A",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "F",
+      "code": "W6",
+      "start": 12800,
+      "room": "Master B",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "L",
+      "code": "W6",
+      "start": 6500,
+      "room": "Master A side",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "R",
+      "code": "W6",
+      "start": 6500,
+      "room": "Master B side",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "B",
+      "code": "W7",
+      "start": 2000,
+      "room": "Master A closet",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "B",
+      "code": "W8",
+      "start": 4250,
+      "room": "Master A WC",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "B",
+      "code": "W9",
+      "start": 5600,
+      "room": "Master A shower",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "B",
+      "code": "W8",
+      "start": 11750,
+      "room": "Master B WC",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "B",
+      "code": "W9",
+      "start": 13250,
+      "room": "Master B shower",
+      "flip": 1
+    },
+    {
+      "level": 2,
+      "wall": "B",
+      "code": "W7",
+      "start": 15600,
+      "room": "Master B closet",
+      "flip": 1
+    }
+  ],
+  "drawing_origins_mm": {
+    "L0": [
+      0,
+      0
+    ],
+    "L1": [
+      45000,
+      0
+    ],
+    "L2": [
+      90000,
+      0
+    ],
+    "Front": [
+      0,
+      -35000
+    ],
+    "Rear": [
+      45000,
+      -35000
+    ],
+    "Left": [
+      90000,
+      -35000
+    ],
+    "Right": [
+      0,
+      -70000
+    ],
+    "Section A-A": [
+      45000,
+      -70000
+    ],
+    "Doors": [
+      90000,
+      -70000
+    ],
+    "Windows": [
+      0,
+      -105000
+    ]
+  }
+}

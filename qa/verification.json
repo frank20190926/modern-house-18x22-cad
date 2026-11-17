@@ -1,0 +1,58 @@
+{
+  "circulation_reachable_rooms": {
+    "L0": [
+      "garage",
+      "repair",
+      "electrical",
+      "stair landing"
+    ],
+    "L1": [
+      "stair landing",
+      "living",
+      "dining",
+      "kitchen",
+      "pantry",
+      "laundry",
+      "guest WC",
+      "guest bedroom",
+      "guest ensuite",
+      "entertainment"
+    ],
+    "L2": [
+      "stair landing",
+      "master A",
+      "master B",
+      "closet A",
+      "closet B",
+      "vanity A",
+      "vanity B",
+      "WC A",
+      "shower A",
+      "WC B",
+      "shower B",
+      "terrace"
+    ]
+  },
+  "rebuild_sha256_identical": true,
+  "hashed_artifacts": 16,
+  "pdf_raster_images": 0,
+  "pdf_text_outside_page": 0,
+  "sha256": {
+    "exports/Modern_House_18.78x22m_CAD_Package.zip": "c690c72390c147350e15b87742e06932c0129e1fb8c5c706bfd7bd697f4607ef",
+    "exports/Modern_House_18.78x22m_Full_CAD.dxf": "cc76c94040b6bc986c8c64e4f80ca90c7fa8a97297d80835a751ec66c811520e",
+    "exports/Modern_House_18.78x22m_Full_Drawing_Set.pdf": "374b4d2e967610b36826716b52508a9f920cce910fa89b6cf51ac20f05bd15bd",
+    "board2-codex.html": "cf363461c78b22efa48fd85c4ccb0b8cd127ddfe4f163a5d500a62d08bd25028",
+    "board3-codex.html": "64a0c30840895f062714940f999ac000a1b4a205878dfeac49d9c8f2e3c4a84e",
+    "board1-codex.html": "ed36f8e899f8990389a42b61aa7745f17e250a31f117c89e71200fc8e15d49c6",
+    "assets/cad/L2.svg": "68215e4db153d02b226d068acca1581c49687476f4b14ea211fb5b48dd0a4bbd",
+    "assets/cad/L0.svg": "8f94e7bbc7b4cf4b1ae7adda9db682eddce3e43d9cde3072062b236025fab510",
+    "assets/cad/L1.svg": "83ed32a55da70c51e67ae0b56ea0f7ac40cbaa02002974498360e5c45d5ffa6a",
+    "assets/cad/Doors.svg": "9527dd8bcc153f4b739f0d3f0faad9b0237ec6599b63214fc5ec00b935a4ece6",
+    "assets/cad/Section_A-A.svg": "b0e3d42b27939cba125487b2674348475b4aeaadb1201a7686c8c631979e18d5",
+    "assets/cad/Front.svg": "fce8f48fcd03f75fdc286dd5e57e09ab5502018946559b81923cc056e4fb19f2",
+    "assets/cad/Right.svg": "576f86ce632a5b37f48540b6a69696d577c90d67ffe0dcc7a938f5afdd7dabe2",
+    "assets/cad/Windows.svg": "fbaaf14efdf69de7422a325386f0792ce0e1a4aa818a66f60baeb2167b338d2b",
+    "assets/cad/Rear.svg": "1f56d50be942d054fd6aa3304990bb22a26ec68754c68c0e4d526ba0f4d4a99f",
+    "assets/cad/Left.svg": "60e5026dedf33a28cf09420abb8f24cb82fabd06d8d304ce3747dc84110c10db"
+  }
+}

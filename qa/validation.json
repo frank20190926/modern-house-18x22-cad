@@ -1,0 +1,33 @@
+{
+  "dxf_version": "AC1024",
+  "units": "millimetres",
+  "dxf_audit_errors": 0,
+  "native_dimensions": 123,
+  "entity_count": 1597,
+  "pdf_pages": 11,
+  "pdf_vector_paths": 1575,
+  "opening_instances": 44,
+  "opening_type_counts": {
+    "GD1": 1,
+    "D8": 1,
+    "W10": 2,
+    "D6": 7,
+    "D5": 4,
+    "D1": 1,
+    "W1": 1,
+    "W2": 1,
+    "D2": 4,
+    "D3": 4,
+    "D7": 2,
+    "W4": 1,
+    "W3": 1,
+    "W5": 1,
+    "W8": 3,
+    "D4": 2,
+    "W6": 4,
+    "W7": 2,
+    "W9": 2
+  },
+  "geometry_checks": "passed",
+  "construction_status": "concept design, not engineered / permit set"
+}
